@@ -1,2 +1,2 @@
-# desafio15
-desafío clase 15 coderhouse
+# proyecto final  
+proyecto final curso de programación de CoderHouse
