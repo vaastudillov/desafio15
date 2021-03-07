@@ -329,10 +329,12 @@ aside img {
 @media screen and (min-width: 320px) {
 	.contenedorListadoVaron, {	
 
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows:  150px 150px;
-		grid-template-areas: 	"listadoVaron  listadoVaron"
-								"listadoVaron  listadoVaron";
+		grid-template-columns:  1fr;
+		grid-template-rows:  150px ;
+		grid-template-areas: 	"listadoVaron "
+								"listadoVaron "
+								"listadoVaron "
+								"listadoVaron ";
 	}
 }
 
