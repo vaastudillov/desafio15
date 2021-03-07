@@ -271,8 +271,10 @@ aside img {
 
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows:  150px 150px;
-		grid-template-areas: 	"listadoDama  listadoDama"
-								"listadoDama  listadoDama";
+		grid-template-areas: 	"listadoDama "
+								"listadoDama "
+								"listadoDama "
+								"listadoDama ";
 	}
 }
 
@@ -291,7 +293,7 @@ aside img {
 		
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows:  800px ;
-		grid-template-areas: "listadoDama ";
+		grid-template-areas: "listadoDama listadoDama listadoDama listadoDama";
 	}
 }
 
