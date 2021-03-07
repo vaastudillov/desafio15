@@ -76,8 +76,8 @@ footer h3 {
 
 @media screen and (min-width: 320px) {
 	.footer, .footer1, .footer2 {
-		grid-template-rows: 1fr;
-		grid-template-columns:  250px;
+		grid-template-columns:  1fr;
+		grid-template-rows:  250px;
 		grid-template-areas: 	"footer1"
 								"footer2";
 	}
@@ -86,20 +86,19 @@ footer h3 {
 @media screen and (min-width: 768px) {
 	.footer, .footer1, .footer2 {
 
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-columns: 550px 550px;
-		grid-template-areas: 	"footer1  footer2"
-								"footer1  footer2";
+		grid-template-columns:  1fr;
+		grid-template-rows:  550px;
+		grid-template-areas: 	"footer1"
+								"footer2";
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	.footer, .footer1, .footer2 {
 		
-		grid-template-rows: repeat(1, 1fr);
-		grid-template-columns: 750px 750px;
-		grid-template-areas: 	"footer1 footer2"
-								"footer1 footer2";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:  250px;
+		grid-template-areas: "footer1 footer2";
 	}
 }
 
@@ -245,20 +244,18 @@ aside img {
 .contenedorListadoDama {
 	height: 100%
 	width: 100%;
+	min-width: 100%
 	font-family: 'Baloo 2', cursive;
 
 	display: grid;
-
-	grid-template-rows: 800px ;
-	grid-template-columns: repeat(4, 250px);
-
 	grid-gap: 18px;
 
 	justify-items: center;
 	align-items: start;
-
 	justify-content: center;
 	align-content: space-evenly;
+
+	grid-area: listadoDama;
 }
 
 .contenedorListadoDama h3 {
@@ -268,6 +265,35 @@ aside img {
 .contenedorListadoDama p {
 	text-decoration: underline;
 } 
+
+@media screen and (min-width: 320px) {
+	.contenedorListadoDama, {	
+
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows:  150px 150px;
+		grid-template-areas: 	"listadoDama  listadoDama"
+								"listadoDama  listadoDama";
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.contenedorListadoDama {
+
+		grid-template-columns: 1fr;
+		grid-template-rows:  450px 450px;
+		grid-template-areas: 	"listadoDama  listadoDama"
+								"listadoDama  listadoDama";
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.contenedorListadoDama {
+		
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows:  800px ;
+		grid-template-areas: "listadoDama ";
+	}
+}
 
 
 
@@ -279,15 +305,12 @@ aside img {
 	font-family: 'Baloo 2', cursive;
 
 	display: grid;
-
-	grid-template-rows: 1000px ;
-	grid-template-columns: repeat(5, 250px);
+	grid-area: listadoVaron;
 
 	grid-gap: 18px;
 
 	justify-items: center;
 	align-items: start;
-
 	justify-content: center;
 	align-content: space-evenly;
 }
@@ -301,3 +324,31 @@ aside img {
 }
 
 
+@media screen and (min-width: 320px) {
+	.contenedorListadoVaron, {	
+
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows:  150px 150px;
+		grid-template-areas: 	"listadoVaron  listadoVaron"
+								"listadoVaron  listadoVaron";
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.contenedorListadoVaron {
+
+		grid-template-columns: 1fr;
+		grid-template-rows:  350px 350px;
+		grid-template-areas: 	"listadoVaron  listadoVaron"
+								"listadoVaron  listadoVaron";
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.contenedorListadoVaron {
+		
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: 800px ;
+		grid-template-areas: "listadoVaron ";
+	}
+}
