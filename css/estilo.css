@@ -269,8 +269,8 @@ aside img {
 @media screen and (min-width: 320px) {
 	.contenedorListadoDama, {	
 
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows:  150px 150px;
+		grid-template-columns:  1fr;
+		grid-template-rows:  150px ;
 		grid-template-areas: 	"listadoDama "
 								"listadoDama "
 								"listadoDama "
