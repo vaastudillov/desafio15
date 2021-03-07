@@ -1,0 +1,303 @@
+/** Estilo General **/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	box-sizing: border-box;	
+	color: #D4D4D4;
+}
+
+
+/* Estilo Header*/
+
+header {
+	padding:10px;
+	width: 100%;
+	height: 100%;
+}
+
+header h2 {
+	margin-top: -5px; 	
+}
+
+header h1, header h2 {
+	font-family: 'Satisfy', cursive;
+	text-decoration: overline;
+	letter-spacing: 7px;
+}
+
+header .logo {
+	margin-top: -10px;
+}
+
+/* Estilo Main*/
+
+main {
+	padding: auto;
+	width: 100%;
+	height: 100%;
+	float: left;
+	font-family: 'Baloo 2', cursive;
+}
+
+/** Estilo Footer **/
+
+footer {
+	padding: 30px;
+	width: 100%;   
+	height: 100%;
+	float: left;
+}
+
+footer h3 {
+	font-family: 'Courgette', cursive;
+}
+
+.footer{
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: 750px 750px;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+}
+
+.footer1 {
+	grid-area: footer1;
+	font-family: 'Baloo 2', cursive;
+}
+
+.footer2 {
+	grid-area: footer2;
+	font-family: 'Baloo 2', cursive;
+}
+
+@media screen and (min-width: 320px) {
+	.footer, .footer1, .footer2 {
+		grid-template-rows: 1fr;
+		grid-template-columns:  250px;
+		grid-template-areas: 	"footer1"
+								"footer2";
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.footer, .footer1, .footer2 {
+
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: 550px 550px;
+		grid-template-areas: 	"footer1  footer2"
+								"footer1  footer2";
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.footer, .footer1, .footer2 {
+		
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-columns: 750px 750px;
+		grid-template-areas: 	"footer1 footer2"
+								"footer1 footer2";
+	}
+}
+
+
+/** Estilo Menú **/
+
+.contenedorMenu{
+	animation: animacionMenu 2s;	
+}
+
+
+.nav li a {	
+	text-decoration: none;
+	padding: 10px 60px;
+	display: block;
+	transition: all 300ms ease;
+	color: #D4D4D4;
+	font-family: 'Baloo 2', cursive;
+}
+.nav > li {
+	float: left;
+}
+
+.nav li ul {
+	display: none;
+	position: absolute;
+}
+
+.nav li:hover >ul {
+	display: flex;
+}
+
+.nav li ul li {
+	position: relative;
+}
+
+.nav li ul li ul {
+	right: -150px;
+	top: 0;
+}
+
+@keyframes animacionMenu {
+ 	from {
+ 		transform: scale(2);
+ 	}
+ 	70% {
+ 		background-color: #9A2521;
+ 	}
+ 	to {
+ 		transform: scale(1);
+ 	}
+
+ }
+
+/* Estilo para Contacto */
+
+.botonLimpiar, .botonEnviar {
+	margin-top: 15px;
+}
+
+form {
+	width: 350px;
+	margin: auto;
+	padding: 10px 20px;
+	margin-top: 70px;
+}
+
+input, textarea {
+	width: 100%;
+	margin-bottom: 5px;
+	padding: 10px;
+	border: none;
+	color: #D4D4D4;
+}
+
+textarea {
+	min-height: 150px;
+	max-height: 200px;
+	max-width: 100%;
+}
+
+form h3 {
+	padding: 10px;
+}
+
+label {
+	margin-top: 10px;
+}
+
+
+
+/***  Estilo Menú Productos  ***/
+
+aside img {
+	width: 100%;
+	height: 100%;
+}
+
+.contenedor1 {
+	height: 100%;
+	padding: 20px;
+	font-family: 'Baloo 2', cursive;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor2 {
+	height: 100%;
+	padding: 20px;
+	font-family: 'Baloo 2', cursive;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor3 {
+	height: 100%;
+	padding: 20px;
+	font-family: 'Baloo 2', cursive;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.subMenu1:hover, .subMenu2:hover, .subMenu3:hover {
+	transform: scale(1.5, 1.5);
+}
+
+
+/***  Estilo Listado de Productos Dama  ***/
+
+
+.contenedorListadoDama {
+	height: 100%
+	width: 100%;
+	font-family: 'Baloo 2', cursive;
+
+	display: grid;
+
+	grid-template-rows: 800px ;
+	grid-template-columns: repeat(4, 250px);
+
+	grid-gap: 18px;
+
+	justify-items: center;
+	align-items: start;
+
+	justify-content: center;
+	align-content: space-evenly;
+}
+
+.contenedorListadoDama h3 {
+	text-decoration: underline;
+}
+
+.contenedorListadoDama p {
+	text-decoration: underline;
+} 
+
+
+
+/***  Estilo Listado de Productos Dama  ***/
+
+.contenedorListadoVaron {
+	height: 100%
+	width: 100%;
+	font-family: 'Baloo 2', cursive;
+
+	display: grid;
+
+	grid-template-rows: 1000px ;
+	grid-template-columns: repeat(5, 250px);
+
+	grid-gap: 18px;
+
+	justify-items: center;
+	align-items: start;
+
+	justify-content: center;
+	align-content: space-evenly;
+}
+
+.contenedorListadoVaron h3 {
+	text-decoration: underline;
+}
+
+.contenedorListadoVaron p {
+	text-decoration: underline;
+}
+
+
