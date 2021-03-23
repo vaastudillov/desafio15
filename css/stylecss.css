@@ -4,6 +4,13 @@
 input, textarea {
   font-size: 15px; }
 
+/* 18px */
+ .contenedorListadoDama {
+  font-size: 18px; }
+
+.contenedorListadoVaron {
+  font-size: 18px; } 
+
 /* 20px */
 .botonLimpiar, .botonEnviar {
   font-size: 20px; }
@@ -18,18 +25,6 @@ footer h4 {
   font-size: 20px; }
 
 .juvenil p {
-  font-size: 20px; }
-
-.contenedorListadoDama {
-  font-size: 20px; }
-
-.contenedorListadoDama p {
-  font-size: 20px; }
-
-.contenedorListadoVaron {
-  font-size: 20px; }
-
-.contenedorListadoVaron p {
   font-size: 20px; }
 
 /* 23px */
@@ -75,7 +70,7 @@ header h1 {
 footer h3 {
   border: dotted 5px #9A2521; }
 
-.listado1, .listado2, .listado3, .listado4, .listado5, .listado6, .listado7, .listado8, .listado9 {
+.listado1, .listado2, .listado3, .listado4, .listado5, .listado6, .listado7, .listado8 {
   border: double 5px #9C3328; }
 
 .nav li a {

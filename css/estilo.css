@@ -246,6 +246,7 @@ aside img {
 	width: 100%;
 	min-width: 100%
 	font-family: 'Baloo 2', cursive;
+	margin-top: 50px;
 
 	display: grid;
 	grid-gap: 18px;
@@ -292,29 +293,31 @@ aside img {
 	.contenedorListadoDama {
 		
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows:  800px ;
+		grid-template-rows:  400px ;
 		grid-template-areas: "listadoDama listadoDama listadoDama listadoDama";
 	}
 }
 
 
 
-/***  Estilo Listado de Productos Dama  ***/
+/***  Estilo Listado de Productos Varón  ***/
 
 .contenedorListadoVaron {
 	height: 100%
 	width: 100%;
+	min-width: 100%
 	font-family: 'Baloo 2', cursive;
+	margin-top: 50px;
 
 	display: grid;
-	grid-area: listadoVaron;
-
 	grid-gap: 18px;
 
 	justify-items: center;
 	align-items: start;
 	justify-content: center;
 	align-content: space-evenly;
+
+	grid-area: listadoVaron;
 }
 
 .contenedorListadoVaron h3 {
@@ -323,8 +326,7 @@ aside img {
 
 .contenedorListadoVaron p {
 	text-decoration: underline;
-}
-
+} 
 
 @media screen and (min-width: 320px) {
 	.contenedorListadoVaron, {	
@@ -342,7 +344,7 @@ aside img {
 	.contenedorListadoVaron {
 
 		grid-template-columns: 1fr;
-		grid-template-rows:  350px 350px;
+		grid-template-rows:  450px 450px;
 		grid-template-areas: 	"listadoVaron  listadoVaron"
 								"listadoVaron  listadoVaron";
 	}
@@ -351,8 +353,8 @@ aside img {
 @media screen and (min-width: 1024px) {
 	.contenedorListadoVaron {
 		
-		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: 800px ;
-		grid-template-areas: "listadoVaron ";
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows:  400px ;
+		grid-template-areas: "listadoVaron listadoVaron listadoVaron listadoVaron";
 	}
 }
